@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Icon=package-x-generic
+Name=Install Package
+Exec=bash -c "sudo dpkg -i %f && read"
+Categories=Other;
+NoDisplay=false
+MimeType=application/vnd.debian.binary-package
+Terminal=true
+X-KeepTerminal=true
