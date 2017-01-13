@@ -11,7 +11,7 @@ Collection of useful Desktop Entry files for Linux file managers. Tested with PC
 ## Usage
 
 0. sudo apt-get install atool rar gvfs-bin gvfs-backends
-1. Extract `.desktop` files to `~/.local/share/applications/`
+1. `wget -O - https://github.com/dmi3/DesktopEntries/archive/master.tar.gz | tar -xz --strip 1 -C ~/.local/share/applications`
 2. In your file manager use Open With → Other
 
 ## Documentation 
