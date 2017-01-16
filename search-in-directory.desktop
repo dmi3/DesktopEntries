@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Search in Directory
+Type=Application
+Icon=search
+Exec=bash -c "xdg-open \$(dirname \$(find $PWD 2>/dev/null | fzf)) && sleep 0.1"
+Categories=Other;
+NoDisplay=false
+MimeType=inode/directory;
+Terminal=true
