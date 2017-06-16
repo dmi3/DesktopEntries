@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=Viewaldi
+Exec=bash -c "cp %f /tmp/viewaldi_preview && vivaldi /tmp/viewaldi_preview && sleep 5 && rm /tmp/viewaldi_preview"
+Categories=Other;
+MimeType=MimeType=all/all;
+Terminal=false

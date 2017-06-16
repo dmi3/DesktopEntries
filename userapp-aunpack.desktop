@@ -2,7 +2,7 @@
 Type=Application
 Icon=extract-archive
 Name=Unpack Archive
-Exec=bash -c "cd $(dirname %f) && /usr/bin/aunpack %f || read"
+Exec=bash -c "cd $(dirname %f) && /usr/bin/aunpack --save-outdir=/tmp/aunpack %f && notify-send \"Extracted to $(cat /tmp/aunpack)\" || read"
 Categories=Other;
 NoDisplay=false
 MimeType=application/zip;application/x-gzip;application/x-gtar;application/x-tgz;application/x-rar-compressed;application/octet-stream;application/x-rar;application/x-7z-compressed

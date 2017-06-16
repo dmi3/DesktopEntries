@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Batch Rename
+Exec=rename.py %U
+Icon=refresh
+Categories=Other;
+MimeType=MimeType=all/all;
+Terminal=true
+X-KeepTerminal=false

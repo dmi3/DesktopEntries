@@ -2,7 +2,7 @@
 Name=Add to Archive
 Type=Application
 Icon=add-files-to-archive
-Exec=bash -c "cd $(dirname %f) && rar a -ep1 $(basename %f | cut -d. -f1).rar %f %F || read"
+Exec=bash -c "NAME=$(basename %f | cut -d. -f1).rar && cd $(dirname %f) && rar a -ep1 $NAME %f %F && notify-send \"Created $NAME\" || read"
 Categories=Other;
 NoDisplay=false
 MimeType=all/all;
