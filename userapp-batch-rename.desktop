@@ -2,7 +2,7 @@
 Type=Application
 Name=Batch Rename
 Exec=rename.py %U
-Icon=refresh
+Icon=gtk-execute
 Categories=Other;
 MimeType=MimeType=all/all;
 Terminal=true

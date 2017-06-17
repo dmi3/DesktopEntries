@@ -1,7 +1,9 @@
 [Desktop Entry]
 Type=Application
 Name=Viewaldi
+Icon=preview-file
 Exec=bash -c "cp %f /tmp/viewaldi_preview && vivaldi /tmp/viewaldi_preview && sleep 5 && rm /tmp/viewaldi_preview"
 Categories=Other;
 MimeType=MimeType=all/all;
+Comment="Copy File to tmp dir, then open it in vivaldi. Useful when running vivaldi in firejail"
 Terminal=false
