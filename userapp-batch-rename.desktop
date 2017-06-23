@@ -1,7 +1,7 @@
 [Desktop Entry]
 Type=Application
 Name=Batch Rename
-Exec=rename.py %U
+Exec=batch-rename.py %U
 Icon=gtk-execute
 Categories=Other;
 MimeType=MimeType=all/all;
