@@ -2,7 +2,7 @@
 Type=Application
 Icon=extract-archive
 Name=Unpack Archive
-Exec=bash -c "echo > /tmp/aunpa && cd $(dirname %f) && /usr/bin/aunpack --save-outdir=/tmp/aunpa %f && notify-send \"Extracted to\" \"$(cat /tmp/aunpa)\" && xdg-open \"$(cat /tmp/aunpa)\" || read"
+Exec=bash -c "echo > /tmp/aunpa && cd \"$(dirname %f)\" && /usr/bin/aunpack --save-outdir=/tmp/aunpa %f && notify-send \"Extracted to\" \"$(cat /tmp/aunpa)\" && xdg-open \"$(cat /tmp/aunpa)\" || read"
 Categories=Other;
 NoDisplay=false
 MimeType=application/zip;application/x-gzip;application/x-gtar;application/x-tgz;application/x-rar-compressed;application/octet-stream;application/x-rar;application/x-7z-compressed

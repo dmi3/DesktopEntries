@@ -5,5 +5,5 @@ Exec=batch-rename.py %U
 Icon=gtk-execute
 Categories=Other;
 MimeType=MimeType=all/all;
-Terminal=true
+Terminal=false
 X-KeepTerminal=false
